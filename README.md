@@ -1,1 +1,1 @@
-# Atterley static HTML page for categoty page for as per lighthouse
+# Atterley static HTML page for category page for as per lighthouse
