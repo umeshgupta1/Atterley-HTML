@@ -18,11 +18,11 @@
     <div class="header-offer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4 offer">
+          <div class="col-lg-4"></div>
+          <div class="col-md-8 col-lg-4 offer">
             <p>It's #blackfridayweekend! Up to 50% off until midnight monday <a class="top-banner-link" href="/men/the-mens-edit/mens-black-friday"><strong>shop men ❯</strong></a> <a class="top-banner-link" href="/women/the-edit/black-friday"><strong>shop women ❯</strong></a></p>
           </div>
-          <div class="col-md-4 top-shipping">
+          <div class="col-md-4 col-lg-4 top-shipping">
             <a href="/orders-and-shipping">Shipping and returns</a>
             <div class="switches">
               <span class="header-lang-curr">&#163; GBP</span>
@@ -36,8 +36,14 @@
       <div class="header-inner">
         <div class="container">
           <div class="header-item header-menu">
+            <button type="button" class="menu-btn">
+              <i class="hamburger-icon notranslate"></i>
+            </button>
             <div class="cat-menu">
               <nav>
+                <button type="button" class="close-menu-btn">
+                  <i class="material-icons notranslate">close</i>
+                </button>
                 <ul>
                   <li>
                     <a href="/men">Men</a>
@@ -173,6 +179,9 @@
                           <li class="level-top"><a class="level-top" href="/boutiques">Boutiques</a></li>
                           <li class="level-top"><a class="level-top" href="/men/editorial">The Edit</a></li>
                         </ul>
+                        <ul class="user-login">
+                          <li><a href="/">My Account</a></li>
+                        </ul>
                       </div>
                     </div>
                   </li>
@@ -190,12 +199,12 @@
                                   <div class="col-md-6 shop-by-category"><strong class="title-sub">Shop By Category</strong>
                                     <div class="submenu-wrap">
                                       <ul>
-                                        <li class=""><a href="/women/clothes/activewear">Activewear</a></li>
-                                        <li class=""><a href="/women/clothes/coats-and-jackets/coats">Coats</a></li>
-                                        <li class=""><a href="/women/clothes/denim">Jeans</a></li>
-                                        <li class=""><a href="/women/clothes/dresses">Dresses</a></li>
-                                        <li class=""><a href="/women/clothes/coats-and-jackets/jackets">Jackets</a></li>
-                                        <li class=""><a href="/women/clothes/jumpsuits">Jumpsuits</a></li>
+                                        <li><a href="/women/clothes/activewear">Activewear</a></li>
+                                        <li><a href="/women/clothes/coats-and-jackets/coats">Coats</a></li>
+                                        <li><a href="/women/clothes/denim">Jeans</a></li>
+                                        <li><a href="/women/clothes/dresses">Dresses</a></li>
+                                        <li><a href="/women/clothes/coats-and-jackets/jackets">Jackets</a></li>
+                                        <li><a href="/women/clothes/jumpsuits">Jumpsuits</a></li>
                                         <li><a href="/women/clothes/knitwear">Knitwear</a></li>
                                       </ul>
                                       <ul>
@@ -345,6 +354,19 @@
                             </div>
                           </li>
                         </ul>
+                        <ul class="user-login">
+                          <li class="parent">
+                            <a href="/">My Account</a>
+                            <div class="menu-dropdown">
+                              <div class="submenu-wrap">
+                                <ul>
+                                  <li><a href="/my-account">My Profile</a></li>
+                                  <li class="logout-link"><a href="/">Logout</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </li>
@@ -352,10 +374,10 @@
               </nav>
             </div>
             <button type="button" class="icon-btn search-btn">
-              <span class="search-icon">Search</span>
+              <span class="search-icon"><span>Search</span></span>
             </button>
             <button type="button" class="icon-btn camera-btn">
-              <span class="camera-icon">Search Image</span>
+              <span class="camera-icon"><span>Search Image</span></span>
             </button>
           </div>
           <div class="header-item header-logo">
@@ -363,10 +385,10 @@
           </div>
           <div class="header-item header-account">
             <button type="button" class="icon-btn account-btn">
-              <span class="account-icon">Account</span>
+              <span class="account-icon"><span>Account</span></span>
             </button>
             <button type="button" class="icon-btn cart-btn">
-              <span class="cart-icon">Bag</span>
+              <span class="cart-icon"><span>Bag</span></span>
             </button>
           </div>
         </div>
@@ -415,7 +437,8 @@
   </div>
   <div class="container">
     <div class="filter-wrapper">
-      <div class="filter-box">
+      <div class="mobile-filter">Filters</div>
+      <div class="filter-box sort-by">
         <div class="filter-title">Sort</div>
         <div class="filter-content">
           <form>
@@ -436,50 +459,91 @@
           </form>
         </div>
       </div>
-      <div class="filter-box">
-        <div class="filter-title">Color</div>
-        <div class="filter-content">
-          <form>
-            <ul>
-              <li>
-                <input type="checkbox" id="blue" name="blue" />
-                <label for="blue">Blue</label>
-              </li>
-              <li>
-                <input type="checkbox" id="red" name="red" />
-                <label for="red">Red</label>
-              </li>
-              <li>
-                <input type="checkbox" id="black" name="black" />
-                <label for="black">Black</label>
-              </li>
-              <li>
-                <input type="checkbox" id="white" name="white" />
-                <label for="white">White</label>
-              </li>
-            </ul>
-          </form>
+      <div class="filter-inner">
+        <div class="filter-mob-title">
+          <button type="button" class="filter-close-btn">
+            <i class="material-icons notranslate">close</i>
+          </button>
         </div>
-      </div>
-      <div class="filter-box">
-        <div class="filter-title">Brand</div>
-        <div class="filter-content">
-          <form>
-            <ul>
-              <li>
-                <input type="checkbox" id="adidas" name="adidas" />
-                <label for="adidas">Adidas</label>
-              </li>
-              <li>
-                <input type="checkbox" id="puma" name="puma" />
-                <label for="puma">Puma</label>
-              </li>
-              <li>
-                <input type="checkbox" id="nike" name="nike" />
-                <label for="nike">Nike</label>
-              </li>
-            </ul>
-          </form>
+        <div class="filter-inner-content">
+          <div class="filter-box">
+            <div class="filter-title">Color</div>
+            <div class="filter-content">
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="blue" name="blue" />
+                    <label for="blue">Blue</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="red" name="red" />
+                    <label for="red">Red</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="black" name="black" />
+                    <label for="black">Black</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="white" name="white" />
+                    <label for="white">White</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="filter-box">
+            <div class="filter-title filter-active">Size<span class="self-clear">Clear</span></div>
+            <div class="filter-content">
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="UK1" name="UK1" />
+                    <label for="UK1">UK1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="UK2" naUK2e="UK2" />
+                    <label for="UK2">UK2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="UK3" name="UK3" />
+                    <label for="UK3">UK3</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="UK4" name="UK4" />
+                    <label for="UK4">UK4</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="filter-box">
+            <div class="filter-title">Brand</div>
+            <div class="filter-content">
+              <form>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="adidas" name="adidas" />
+                    <label for="adidas">Adidas</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="puma" name="puma" />
+                    <label for="puma">Puma</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="nike" name="nike" />
+                    <label for="nike">Nike</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="filter-clear-box">
+            <strong>Filter</strong>
+            <button type="button" class="filter-clear-btn">
+              <i class="material-icons notranslate" data-v-2cab02e8="">cancel</i>
+              Clear filters
+            </button>
+          </div>
         </div>
       </div>
     </div>
